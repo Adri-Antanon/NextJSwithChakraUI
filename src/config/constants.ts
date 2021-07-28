@@ -1,24 +1,24 @@
 import { NavItem } from "../..";
 
 export const NAV_ITEMS: Array<NavItem> = [
-    {
-        label: "¿Qué es Futbar?",
-        href: "#",
-      },
-    {
+  {
+    label: "¿Qué es Futbar?",
+    href: "#QueEsFutbar",
+  },
+  {
     label: "Busca tu bar",
-    href: "#",
+    href: "#BuscaTuBar",
   },
   {
     label: "LaPorra",
-    href: "#",
+    href: "#LaPorra",
   },
   {
     label: "Noticias",
-    href: "#",
+    href: "#Noticias",
   },
   {
     label: "Descarga Futbar",
-    href: "#",
+    href: "#DescargarFutbar",
   },
 ];

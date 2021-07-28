@@ -10,11 +10,13 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 import { MobileNav } from "../MobileNav";
 
 import { DesktopNav } from "../DesktopNav";
+
+// import Logo from "/static/img/logo/futbar_logo_black.png"
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -52,7 +54,13 @@ export default function Header() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Logo
+            Futbar LOGO
+            {/* <img
+            height="57"
+            width="160"
+              src={Logo}
+              alt="futbar logo"
+            /> */}
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -67,26 +75,18 @@ export default function Header() {
           spacing={6}
         >
           <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
+            color={"black"}
+            bg={"green.400"}
             href={"#"}
             _hover={{
-              bg: "pink.300",
+              bg: "green.300",
             }}
+            rightIcon={<ChevronRightIcon/>}
           >
-            Sign Up
+            Soy un bar
           </Button>
         </Stack>
       </Flex>
