@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../src/components/Header";
 
-export default function Home() {
+export default function Bares() {
   return (
     <div>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
 
       <Header />
       <main>
-        <h1>Esto es el contenido y página de fans</h1>
+        <h1>Esto es el contenido y página de bares</h1>
       </main>
       <footer>
         <h3>Esto es el footer</h3>

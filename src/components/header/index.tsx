@@ -13,8 +13,8 @@ import {
 import { HamburgerIcon, CloseIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 import { MobileNav } from "../MobileNav";
-
 import { DesktopNav } from "../DesktopNav";
+import { CustomButton } from "../CustomButton";
 
 // import Logo from "/static/img/logo/futbar_logo_black.png"
 
@@ -74,6 +74,13 @@ export default function Header() {
           direction={"row"}
           spacing={6}
         >
+          <CustomButton
+            text="soy un bar"
+            hrefTo="/bares"
+            bgColor="green.400"
+            hoverBG="green.300"
+            headerSection
+          />
           <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
@@ -84,7 +91,7 @@ export default function Header() {
             _hover={{
               bg: "green.300",
             }}
-            rightIcon={<ChevronRightIcon/>}
+            rightIcon={<ChevronRightIcon />}
           >
             Soy un bar
           </Button>
